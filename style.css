@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: purple;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #030728;
+    color: #fff;
+}
+
+.wrapper {
+    width: 500px;
+    background: rgba(2, 7, 40, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 100%;
+        margin: auto 10px;
+    }
+}
+
+.wrapper header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+.wrapper form input,
+.wrapper form select,
+.wrapper form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.wrapper form p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.wrapper form input {
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    border: 1px solid purple;
+}
+
+.wrapper form input:focus {
+    border: 2px solid purple;
+}
+
+form .drop-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.drop-list .select-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    padding: 3px 5px;
+    /* width: 100%; */
+    height: 45px;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+.drop-list .select-box img {
+    max-width: 21px;
+}
+
+.drop-list .select-box select {
+    width: auto;
+    border: none;
+    outline: none;
+    margin: 0 -5px 0 5px;
+    border-radius: 0;
+}
+
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: purple;
+    border-radius: 5px;
+}
+
+.drop-list .icon {
+    font-size: 14px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.exchange_rate {
+    font-size: 16px;
+    margin: 20px 0 30px;
+}
+
+.wrapper form button {
+    height: 50px;
+    background: purple;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.wrapper form button:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid purple;
+}
